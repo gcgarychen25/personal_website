@@ -9,6 +9,23 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Twentieth+Century&display=swap'); /* Import Twentieth Century font */
+    body, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+      font-family: 'Twentieth Century', sans-serif; /* Use Twentieth Century font */
+    }
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #042440; /* McKinsey Blue */
+    }
+    .navbar-inverse .navbar-nav > .active > a,
+    .navbar-inverse .navbar-nav > .active > a:hover,
+    .navbar-inverse .navbar-nav > .active > a:focus,
+    .navbar-inverse .navbar-brand,
+    .navbar-inverse .navbar-nav > li > a {
+      color: #FFFFFF; /* Change text color here */
+      font-size: 20px;
+    }
     .project-row {
       margin-bottom: 40px;
     }
@@ -19,6 +36,7 @@
     }
     .project-description, .skill-legend {
       padding-left: 20px;
+      font-size: 16px;
     }
     hr {
       margin-top: 40px;
@@ -26,7 +44,8 @@
     }
     .section-title {
       font-weight: bold;
-      margin-top: 40px;
+      margin-top: 30px;
+      font-size: 30px;
     }
   </style>
 </head>
@@ -56,7 +75,7 @@
 
 <div class="container">
   <h2 class="section-title">Project Experiences</h2>
-  <p>Here's a selection of projects that showcase my skills in machine learning, software development, robotics, and sustainability. Each project highlights my ability to apply technical knowledge and problem-solving skills to real-world challenges.</p>
+  <p style="font-size: 18px;">Here's a selection of projects that showcase my skills in machine learning, software development, robotics, and sustainability. Each project highlights my ability to apply technical knowledge and problem-solving skills to real-world challenges.</p>
   
   <h3 class="section-title">Skills Legend</h3>
   <div class="row skill-legend">
@@ -77,11 +96,14 @@
       </div>
       <div class="col-sm-6">
         <p class="project-description">
-          <strong>Machine Learning Research Affiliate at Lawrence Berkeley National Laboratory:</strong> In the summer of 2023, I had the privilege of joining Lawrence Berkeley National Laboratory as a Machine Learning Research Affiliate. During this period, I tackled an ambitious project aimed at reconstructing CT images using a hierarchical Variational Autoencoder (VAE). My goal was to minimize radioactive exposure for patients without compromising the quality of the images. This project not only challenged my technical skills but also allowed me to contribute meaningfully to healthcare. I delved deep into state-of-the-art generative AI, trained models on computing clusters, and preprocessed 30 GBs of CT images into sinograms, enhancing my proficiency in machine learning and data processing.
+          <strong>Machine Learning Research Affiliate at Lawrence Berkeley National Laboratory:</strong>
+          <br>
+          <br>
+          In the summer of 2023, I had the privilege of joining Lawrence Berkeley National Laboratory as a Machine Learning Research Affiliate. During this period, I tackled an ambitious project aimed at reconstructing CT images using a hierarchical Variational Autoencoder (VAE). My goal was to minimize radioactive exposure for patients without compromising the quality of the images. This project not only challenged my technical skills but also allowed me to contribute meaningfully to healthcare. I delved deep into state-of-the-art generative AI, trained models on computing clusters, and preprocessed 30 GBs of CT images into sinograms, enhancing my proficiency in machine learning and data processing.
+          <br>
           <br><i class="fas fa-brain"></i> Machine Learning
           <br><i class="fab fa-python"></i> Python
-          <br><i class="fab fa-atom"></i> Image Reconstruction
-        </p>
+          <br><i class="fas fa-atom"></i> Image Reconstruction
       </div>
     </div>
     <hr>
@@ -93,10 +115,14 @@
       </div>
       <div class="col-sm-6">
         <p class="project-description">
-          <strong>Data Analyst on Molecular Dynamics Simulation at Northwestern University:</strong> My journey into the microscopic world of molecular dynamics simulation began in January 2023 when I initiated an academic collaboration between Swarthmore College and Northwestern University. I developed a software tool that could highlight contaminant-membrane interactions at an Angstrom-scale resolution, focusing on water filtration membranes. This project was not just a testament to my coding skills but also my curiosity and drive to understand complex systems. By quantitatively measuring the hopping mechanism in membrane filtration processes, I pushed the boundaries of what I could achieve with Python and NumPy, further solidifying my interest in research and development.
+          <strong>Data Analyst on Molecular Dynamics Simulation at Northwestern University:
+            <br>
+            <br>  
+          </strong> My journey into the microscopic world of molecular dynamics simulation began in January 2023 when I initiated an academic collaboration between Swarthmore College and Northwestern University. I developed a software tool that could highlight contaminant-membrane interactions at an Angstrom-scale resolution, focusing on water filtration membranes. This project was not just a testament to my coding skills but also my curiosity and drive to understand complex systems. By quantitatively measuring the hopping mechanism in membrane filtration processes, I pushed the boundaries of what I could achieve with Python and NumPy, further solidifying my interest in research and development.
+          <br>
           <br><i class="fas fa-cogs"></i> Mechanical
           <br><i class="fab fa-python"></i> Python
-          <br><i class="fab fa-atom"></i> Molecular Dynamics
+          <br><i class="fas fa-atom"></i> Molecular Dynamics
           <br><i class="fas fa-seedling"></i> Sustainability
         </p>
       </div>
@@ -110,8 +136,10 @@
       </div>
       <div class="col-sm-6">
         <p class="project-description">
-          <strong>President’s Sustainability Research Fellow on Sustainable Food Systems:</strong> As a President’s Sustainability Research Fellow at Swarthmore College, I led a project that aimed to transform how our campus approached food sustainability. I developed a digital data-tracking system using Python and Excel, which supported strategic purchase recommendations for the dining department. My efforts culminated in a comprehensive 20-page report that not only raised the college’s STARS rating to Gold but also paved the way for more informed, sustainable food sourcing practices. This project was a testament to my passion for sustainability and my belief in the power of technology to enact real-world change.
-          <br><i class="fas fa-seedling"></i> Sustainability
+          <strong>President’s Sustainability Research Fellow on Sustainable Food Systems:
+            <br><br>
+          </strong> As a President’s Sustainability Research Fellow at Swarthmore College, I led a project that aimed to transform how our campus approached food sustainability. I developed a digital data-tracking system using Python and Excel, which supported strategic purchase recommendations for the dining department. My efforts culminated in a comprehensive 20-page report that not only raised the college’s STARS rating to Gold but also paved the way for more informed, sustainable food sourcing practices. This project was a testament to my passion for sustainability and my belief in the power of technology to enact real-world change.
+          <br><br><i class="fas fa-seedling"></i> Sustainability
           <br><i class="fab fa-python"></i> Python
         </p>
       </div>
@@ -125,11 +153,13 @@
     </div>
     <div class="col-sm-6">
       <p class="project-description">
-        <strong>Cornell Nexus Robotics Project Team:</strong> In the spring of 2024, I was part of the Cornell Nexus Robotics Project Team, where we focused on enhancing a robot’s obstacle avoidance capability through research on real-time detection algorithms. My contributions spanned from integrating Arduino and Raspberry Pi systems with an RGB-D camera to exploring scalable computing solutions for autonomous robots tasked with collecting microplastics on beaches. This experience honed my skills in robotics and embedded systems, reaffirming my commitment to using technology to address environmental challenges.
-        <br><i class="fas fa-brain"></i> Machine Learning
+        <strong>Cornell Nexus Robotics Project Team:
+          <br><br>
+        </strong> In the spring of 2024, I was part of the Cornell Nexus Robotics Project Team, where we focused on enhancing a robot’s obstacle avoidance capability through research on real-time detection algorithms. My contributions spanned from integrating Arduino and Raspberry Pi systems with an RGB-D camera to exploring scalable computing solutions for autonomous robots tasked with collecting microplastics on beaches. This experience honed my skills in robotics and embedded systems, reaffirming my commitment to using technology to address environmental challenges.
+        <br><br><i class="fas fa-brain"></i> Machine Learning
         <br><i class="fab fa-python"></i> Python
-        <br><i class="fab fa-cogs"></i> Electrical
-        <br><i class="fab fa-bolt"></i> Mechanical
+        <br><i class="fas fa-cogs"></i> Electrical
+        <br><i class="fas fa-bolt"></i> Mechanical
       </p>
     </div>
   </div>
@@ -143,8 +173,10 @@
     </div>
     <div class="col-sm-6">
       <p class="project-description">
-        <strong>Quantum Computing Summer Program at The Laboratory for Physical Sciences:</strong> During the summer of 2023, I immersed myself in the world of quantum computing through a program at The Laboratory for Physical Sciences. Here, I gained hands-on experience with quantum circuits on IBM Quantum Computers, diving into principles like entanglement and algorithms such as Grover & Deutsch-Josza. This program expanded my understanding of quantum computing's potential and its environmental implications, highlighting the challenges and opportunities in this cutting-edge field.
-        <br><i class="fas fa-atom"></i> Quantum Computing
+        <strong>Quantum Computing Summer Program at The Laboratory for Physical Sciences:
+          <br><br>
+        </strong> During the summer of 2023, I immersed myself in the world of quantum computing through a program at The Laboratory for Physical Sciences. Here, I gained hands-on experience with quantum circuits on IBM Quantum Computers, diving into principles like entanglement and algorithms such as Grover & Deutsch-Josza. This program expanded my understanding of quantum computing's potential and its environmental implications, highlighting the challenges and opportunities in this cutting-edge field.
+        <br><br><i class="fas fa-atom"></i> Quantum Computing
         <br><i class="fab fa-python"></i> Python
       </p>
     </div>
@@ -152,14 +184,16 @@
   <hr>
 
   <!-- Project 6 -->
-  div class="row project-row">
+  <div class="row project-row">
       <div class="col-sm-6">
         <img src="guitar1.jpg" class="img-responsive project-img" alt="Machine Learning Research">
       </div>
       <div class="col-sm-6">
         <p class="project-description">
-          <strong>Computer Aided Design and Manufacturing:</strong> I worked with Fusion 360, Laser Cutter, and Haas Mills.
-          <br><i class="fas fa-cogs"></i> Mechanical
+          <strong>Computer Aided Design and Manufacturing:
+            <br><br>
+          </strong> I worked with Fusion 360, Laser Cutter, and Haas Mills.
+          <br><br><i class="fas fa-cogs"></i> Mechanical
           <br><i class="fab fa-python"></i> Python
         </p>
       </div>
@@ -174,8 +208,9 @@
       </div>
       <div class="col-sm-6">
         <p class="project-description">
-          <strong>Computer Aided Design and Manufacturing:</strong> I worked with Fusion 360, Laser Cutter, and Haas Mills.
-          <br><i class="fas fa-cogs"></i> Mechanical
+          <strong>Computer Aided Design and Manufacturing:\n
+            <br><br></strong> I worked with Fusion 360, Laser Cutter, and Haas Mills.
+            <br><br><i class="fas fa-cogs"></i> Mechanical
           <br><i class="fab fa-python"></i> Python
         </p>
       </div>

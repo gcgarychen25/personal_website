@@ -8,16 +8,35 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Twentieth+Century&display=swap'); /* Import Twentieth Century font */
+    body, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+      font-family: 'Twentieth Century', sans-serif; /* Use Twentieth Century font */
+    }
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
+      background-color: #042440; /* McKinsey Blue */
+    }
+    .navbar-inverse .navbar-nav > .active > a,
+    .navbar-inverse .navbar-nav > .active > a:hover,
+    .navbar-inverse .navbar-nav > .active > a:focus,
+    .navbar-inverse .navbar-brand,
+    .navbar-inverse .navbar-nav > li > a {
+      color: #FFFFFF; /* Change text color here */
+      font-size: 20px;
     }
     footer {
       background-color: #f2f2f2;
       padding: 25px;
     }
     .custom-jumbotron {
-      margin-top: 40px;
+      margin-top: 50px;
+    }
+    img.img-responsive.img-circle.mx-auto {
+      display: block;
+      margin: 0 auto; /* Center-align the image */
+      width:200px; /* Adjusted width */
+      height:200px; /* Adjusted height */
     }
   </style>
 </head>
@@ -49,7 +68,7 @@
   <div class="container text-center">
     <h1>Welcome to My Space!</h1>      
     <p>My name is Gary Chen. I'm majoring in Computer Science with a minor in Mechanical Engineering at Cornell. I'm expected to graduate in May, 2025. I like cooking and swimming a lot.</p>
-    <img src="headshot.JPG" class="img-responsive img-circle mx-auto" style="width:150px; height:150px;" alt="My Headshot">
+    <img src="headshot.JPG" class="img-responsive img-circle mx-auto" style="width:300px; height:300px;" alt="My Headshot">
   </div>
 </div>
 

@@ -7,45 +7,76 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <!-- Step 1: Include FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Twentieth+Century&display=swap');
+    body, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+      font-family: 'Twentieth Century', sans-serif;
+    }
+    .navbar {
+      margin-bottom: 20px; /* Increased bottom margin */
+      border-radius: 0;
+      background-color: #042440; /* McKinsey Blue */
+    }
+    .navbar-inverse .navbar-nav > .active > a,
+    .navbar-inverse .navbar-nav > .active > a:hover,
+    .navbar-inverse .navbar-nav > .active > a:focus,
+    .navbar-inverse .navbar-brand,
+    .navbar-inverse .navbar-nav > li > a {
+      color: #FFFFFF;
+      font-size: 20px; /* Placeholder for font size adjustment */
+    }
     .icon {
       margin: 10px;
-      font-size: 40px;
+      font-size: 40px; /* Placeholder for icon size adjustment */
+    }
+    .contact-image {
+      text-align: center; /* Centers the image */
+      margin-bottom: 20px; /* Space between image and icons */
+    }
+    .contact-image img {
+      width: 50%; /* Placeholder for image size adjustment */
+      height: auto;
+    }
+    .contact-info {
+      text-align: center; /* Centers the contact information and icons */
     }
   </style>
 </head>
+<body>
 
 <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="#">GC</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="https://drive.google.com/file/d/1l0YPCHFOE14Z7k803zM2fGlciHnoqWwD/view?usp=sharing" target="_blank">CV</a></li>
-          <li><a href="https://medium.com/@gcgarychen25/the-world-i-see-9d171bcf5f33" target="_blank">Vision</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">GC</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://drive.google.com/file/d/1l0YPCHFOE14Z7k803zM2fGlciHnoqWwD/view?usp=sharing" target="_blank">CV</a></li>
+        <li><a href="https://medium.com/@gcgarychen25/the-world-i-see-9d171bcf5f33" target="_blank">Vision</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-
-<body>
-  <div class="container">
-    <h1>Contact Me</h1>
-    <p>If you have any questions or would like to get in touch, feel free to contact me.</p>
+<div class="container">
+  <div class="contact-image">
+    <!-- Replace 'path_to_your_image.jpg' with the actual path to your image -->
+    <img src="Contact.JPG" alt="Contact Image">
+  </div>
+  
+  <div class="contact-info">
+    <p style="font-size: 18px;">If you have any questions or would like to get in touch, feel free to contact me.</p> <!-- Placeholder for text size adjustment -->
     
-    <!-- Step 2: Add Social Media and Calendar Icons -->
+    <!-- Social Media and Contact Icons -->
     <div>
       <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/gcgarychen25/" target="_blank" class="icon">
@@ -66,12 +97,14 @@
       <a href="https://medium.com/@gcgarychen25" target="_blank" class="icon">
         <i class="fas fa-feather-alt"></i>
       </a>
+    </div>
 
-         <!-- Email -->
-        <div>
-         <p>Email me at: <a href="mailto:gc558@cornell.edu">My Email</a></p>
-        </div>
+    <!-- Email -->
+    <div>
+     <p style="font-size: 18px;">Email me at: <a href="mailto:gc558@cornell.edu">My Email</a></p>
     </div>
   </div>
+</div>
+
 </body>
 </html>
