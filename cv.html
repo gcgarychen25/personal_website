@@ -8,30 +8,49 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-    .cv-image {
-      max-width: 100%;
-      height: auto;
+    @import url('https://fonts.googleapis.com/css2?family=Twentieth+Century&display=swap');
+    body, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+      font-family: 'Twentieth Century', sans-serif;
+    }
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #042440; /* McKinsey Blue */
+    }
+    .navbar-inverse .navbar-nav > .active > a,
+    .navbar-inverse .navbar-nav > .active > a:hover,
+    .navbar-inverse .navbar-nav > .active > a:focus,
+    .navbar-inverse .navbar-brand,
+    .navbar-inverse .navbar-nav > li > a {
+      color: #FFFFFF;
+      font-size: 20px;
+    }
+    .cv-iframe {
+      width: 100%;
+      height: 500px; /* Adjust height as necessary */
+      border: none;
     }
     .download-btn {
       margin-top: 20px;
     }
   </style>
 </head>
+<body>
 
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+          <span the="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
         <a class="navbar-brand" href="#">GC</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="cv.html">CV</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="cv.html">CV</a></li>
           <li><a href="https://medium.com/@gcgarychen25/the-world-i-see-9d171bcf5f33" target="_blank">Vision</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -40,17 +59,16 @@
     </div>
 </nav>
 
-
-<body>
-  <div class="container">
+<div class="container">
     <h1>Curriculum Vitae</h1>
-    <p>Below is an image of my CV. You can also download a PDF version for your convenience.</p>
-    <!-- CV Image -->
-    <img src="cv_photo.jpg" alt="Gary Chen's CV" class="cv-image">
+    <p>Below is an embedded view of my CV from Google Drive. You can also download a PDF version for your convenience.</p>
+    <!-- Embedded CV from Google Drive -->
+    <iframe src="https://drive.google.com/file/d/1VfzCIe3_Q4qyVaJ28sB7YUvyGQfADJgH/preview" class="cv-iframe"></iframe>
     <!-- Download CV Button -->
     <div class="download-btn">
       <a href="Gary_Chen_CV.pdf" class="btn btn-primary" download="Gary_Chen_CV.pdf">Download CV</a>
     </div>
   </div>
+
 </body>
 </html>
