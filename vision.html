@@ -7,13 +7,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Twentieth+Century&display=swap');
     body, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
       font-family: 'Twentieth Century', sans-serif;
     }
     .navbar {
-      margin-bottom: 0;
+      margin-bottom: 20px;
       border-radius: 0;
       background-color: #042440; /* McKinsey Blue */
     }
@@ -25,35 +26,61 @@
       color: #FFFFFF;
       font-size: 20px;
     }
+    .vision-image {
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    .vision-image img {
+      width: 75%;
+      height: auto;
+    }
+    .vision-info {
+      text-align: center;
+      font-size: 20px;
+    }
+    .medium-button {
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
+
 <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="#">GC</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="cv.html">CV</a></li>
-          <li class="active"><a href="vision.html">Vision</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span the="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">GC</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li class="active"><a href="vision.html">Vision</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
 <div class="container">
-    <h1>My Vision</h1>
-    <p>Here, I share my vision, aspirations, and what drives me in my professional journey. Read my thoughts on <a href="https://medium.com/@gcgarychen25/the-world-i-see-9d171bcf5f33" target="_blank">Medium</a>.</p>
-    <!-- Optionally add a summary or preview of your vision here if direct embedding isn't possible -->
+  <div class="vision-image">
+    <!-- Replace 'path_to_your_image.jpg' with the actual path to your image -->
+    <img src="vision.JPG" alt="Vision Image">
+  </div>
+  
+  <div class="vision-info">
+    <p>I occasionally share my thoughts on technological trends on Medium.</p>
+    <div class="medium-button">
+      <a href="https://medium.com/@gcgarychen25" target="_blank" class="btn btn-primary">Read on Medium</a>
+    </div>
+  </div>
 </div>
+
 </body>
 </html>
