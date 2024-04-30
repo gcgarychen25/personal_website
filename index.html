@@ -8,21 +8,21 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Twentieth+Century&display=swap'); /* Import Twentieth Century font */
+    @import url('https://fonts.googleapis.com/css2?family=Twentieth+Century&display=swap');
     body, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
-      font-family: 'Twentieth Century', sans-serif; /* Use Twentieth Century font */
+      font-family: 'Twentieth Century', sans-serif;
     }
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
-      background-color: #042440; /* McKinsey Blue */
+      background-color: #042440;
     }
     .navbar-inverse .navbar-nav > .active > a,
     .navbar-inverse .navbar-nav > .active > a:hover,
     .navbar-inverse .navbar-nav > .active > a:focus,
     .navbar-inverse .navbar-brand,
     .navbar-inverse .navbar-nav > li > a {
-      color: #FFFFFF; /* Change text color here */
+      color: #FFFFFF;
       font-size: 20px;
     }
     footer {
@@ -34,9 +34,29 @@
     }
     img.img-responsive.img-circle.mx-auto {
       display: block;
-      margin: 0 auto; /* Center-align the image */
-      width:200px; /* Adjusted width */
-      height:200px; /* Adjusted height */
+      margin: 0 auto;
+      width:200px;
+      height:200px;
+    }
+    #gc-button:hover {
+       transform: scale(1.2); /* Scale up the button by 30% when hovered */
+       transition: transform 0.3s; /* Smooth transition effect */
+    }
+    #cv-button:hover {
+       transform: scale(1.2); /* Scale up the button by 30% when hovered */
+       transition: transform 0.3s; /* Smooth transition effect */
+    }
+    #vision-button:hover {
+       transform: scale(1.2); /* Scale up the button by 30% when hovered */
+       transition: transform 0.3s; /* Smooth transition effect */
+    }
+    #pt-button:hover {
+       transform: scale(1.2); /* Scale up the button by 30% when hovered */
+       transition: transform 0.3s; /* Smooth transition effect */
+    }
+    #ct-button:hover {
+       transform: scale(1.2); /* Scale up the button by 30% when hovered */
+       transition: transform 0.3s; /* Smooth transition effect */
     }
   </style>
 </head>
@@ -50,15 +70,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html">GC</a>
+      <a class="navbar-brand" href="index.html" id="gc-button">GC</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="cv.html" target="_blank">CV</a></li>
-        <li><a href="vision.html" target="_blank">Vision</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li class="active"><a href="index.html" id="home-button">Home</a></li>
+        <li><a href="cv.html" target="_blank" id="cv-button">CV</a></li>
+        <li><a href="vision.html" target="_blank" id="vision-button">Vision</a></li>
+        <li><a href="portfolio.html" id="pt-button">Portfolio</a></li>
+        <li><a href="contact.html" id="ct-button">Contact</a></li>
       </ul>
     </div>
   </div>

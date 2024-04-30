@@ -33,6 +33,26 @@
     .download-btn {
       margin-top: 20px;
     }
+    #gc-button:hover {
+       transform: scale(1.2); /* Scale up the button by 30% when hovered */
+       transition: transform 0.3s; /* Smooth transition effect */
+    }
+    #home-button:hover {
+       transform: scale(1.2); /* Scale up the button by 30% when hovered */
+       transition: transform 0.3s; /* Smooth transition effect */
+    }
+    #ct-button:hover {
+       transform: scale(1.2); /* Scale up the button by 30% when hovered */
+       transition: transform 0.3s; /* Smooth transition effect */
+    }
+    #vision-button:hover {
+       transform: scale(1.2); /* Scale up the button by 30% when hovered */
+       transition: transform 0.3s; /* Smooth transition effect */
+    }
+    #pt-button:hover {
+       transform: scale(1.2); /* Scale up the button by 30% when hovered */
+       transition: transform 0.3s; /* Smooth transition effect */
+    }
   </style>
 </head>
 <body>
@@ -45,15 +65,15 @@
           <span the="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="index.html">GC</a>
+        <a class="navbar-brand" href="index.html" id="gc-button">GC</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="cv.html">CV</a></li>
-          <li><a href="vision.html" target="_blank">Vision</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" id="home-button">Home</a></li>
+          <li class="active"><a href="cv.html" target="_blank" id="cv-button">CV</a></li>
+          <li><a href="vision.html" target="_blank" id="vision-button">Vision</a></li>
+          <li><a href="portfolio.html" id="pt-button">Portfolio</a></li>
+          <li><a href="contact.html" id="ct-button">Contact</a></li>
         </ul>
       </div>
     </div>
