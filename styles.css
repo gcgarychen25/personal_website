@@ -71,6 +71,13 @@ img.img-responsive.img-circle.mx-auto {
 .icon {
     margin: 10px;
     font-size: 40px;
+    color: #042440;
+    text-decoration: none;
+}
+
+a.icon:hover {
+    opacity: 0.7;
+    text-decoration: none;
 }
 
 .contact-image {
