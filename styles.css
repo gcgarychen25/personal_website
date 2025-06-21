@@ -138,3 +138,11 @@ hr {
 a.btn {
     margin-top: 20px;
 }
+
+.custom-jumbotron h1 {
+  font-size: 5rem; /* Adjust as needed for "Welcome to My Space!" */
+}
+
+.custom-jumbotron .lead {
+  font-size: 2rem; /* Adjust as needed for the intro paragraph */
+}
