@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Active Contextualization – Vision</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      line-height: 1.6;
+      color: #1c1c1e;
+      background-color: #fff;
+    }
+    main {
+      max-width: 720px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 2.5rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+    p, li {
+      font-size: 1.125rem;
+      margin-bottom: 1.5rem;
+    }
+    ol {
+      padding-left: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar (unchanged) -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html" id="gc-button">GC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../index.html" id="home-button">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="../vision.html" id="vision-button">Vision</a></li>
+          <li class="nav-item"><a class="nav-link" href="../portfolio.html" id="pt-button">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="../contact.html" id="ct-button">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article -->
+  <main>
+    <h1>From Context to Contextualize: Why AI Needs Playgrounds, Not Playbooks</h1>
+    <p class="text-muted">June 18, 2025 • Vision Series</p>
+
+    <p>Buying a home is, for most people, the single most context‑rich choice they ever make. That complexity pulled me into building a real‑estate‑auction simulation last week: a sandbox for studying how autonomous bidding agents grapple with context.</p>
+
+    <p>I cycled from hand‑written heuristics to RL to LLM chat—only to hit the same wall. Reinforcement learning demanded fussy reward shaping; LLM orchestration ballooned into a thicket of states, each hungry for hand‑picked clues. The more logic I wrote, the more dumb the system felt.</p>
+
+    <p>LangGraph's recent post, <strong>"How to Think About Agent Frameworks,"</strong> argues that reliability hinges on feeding each agent the <em>right</em> context at the <em>right</em> time. But that recipe is still passive: humans curate, agents consume. Designing <em>what</em> to give them is labor‑intensive and, by imitation‑learning math, caps performance at our own ceiling. We need to teach agents <strong>how</strong>—not what—to contextualize.</p>
+
+    <p>A memory from high‑school history snapped this into focus. "Historical contextualization," our teacher insisted, was a <em>verb</em>: actively framing events inside bigger forces. It is the cornerstone of critical thinking. If we want agents that reason and evolve, we must let them contextualize for themselves.</p>
+
+    <p>Andrej  Karpathy echoed this at YC's AI school summit, sketching agents that rewrite their own prompts mid‑run—reflection turned into executable code. That, not token limits, is the true bottleneck.</p>
+
+    <p>Viewed through this lens, three observations converge:</p>
+
+    <ol>
+      <li><strong>Yann  LeCun:</strong> Today's LLMs ingest ~10<sup>13</sup>  bits; by age  four a child's eyes alone have seen ~10<sup>15</sup>  bits. LLMs have sampled barely 1  % of a toddler's raw experience.</li>
+      <li><strong>My Computer Architecture Professor Hakim  Weatherspoon</strong> asked 2 decades ago, "How do we <em>store</em> an <em>Avogadro</em> number of files?" That moon‑shot seeded the last two decades of cloud storage, and now I want to ask, "How can we enable AI agents to <strong><em>contextualize</em></strong>  an <em>Avogadro</em> number of bits on the fly?"</li>
+      <li><strong>Richard  Sutton and David Silver, "Welcome to the Era of Experience":</strong> Once agents act in rich environments, "there will be no shortage of grounded signals"—experience itself becomes the reward.</li>
+    </ol>
+
+    <p><strong>Active contextualization</strong> is the lever that unites these threads. We are not building smarter multi‑agent workflows; we are laying out an <strong>agentic playground</strong>—a boundless space where agents learn to choose their own spotlights, weave their own narratives, and in doing so, outgrow their authors. When agents master the verb <em>contextualize</em>, they will turn Avogadro‑scale data into intuition—and the next era of intelligence will begin.</p>
+
+    <hr class="my-5">
+    <div class="d-flex justify-content-between">
+      <a href="../portfolio.html" class="btn btn-outline-secondary">← Back to Portfolio</a>
+      <a href="from-context-to-contextualize.pdf" class="btn btn-outline-primary" download>Download PDF</a>
+      <span class="align-self-center text-muted small">© 2025 Gary Chen</span>
+    </div>
+  </main>
+</body>
+</html>
