@@ -4,81 +4,25 @@
   <title>Your Portfolio - Gary Chen</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Twentieth+Century&display=swap');
-    body, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
-      font-family: 'Twentieth Century', sans-serif;
-    }
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-      background-color: #042440;
-    }
-    .navbar-inverse .navbar-nav > .active > a,
-    .navbar-inverse .navbar-nav > .active > a:hover,
-    .navbar-inverse .navbar-nav > .active > a:focus,
-    .navbar-inverse .navbar-brand,
-    .navbar-inverse .navbar-nav > li > a {
-      color: #FFFFFF;
-      font-size: 20px;
-    }
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-    .custom-jumbotron {
-      margin-top: 50px;
-    }
-    img.img-responsive.img-circle.mx-auto {
-      display: block;
-      margin: 0 auto;
-      width:200px;
-      height:200px;
-    }
-    #gc-button:hover {
-       transform: scale(1.2); /* Scale up the button by 30% when hovered */
-       transition: transform 0.3s; /* Smooth transition effect */
-    }
-    #cv-button:hover {
-       transform: scale(1.2); /* Scale up the button by 30% when hovered */
-       transition: transform 0.3s; /* Smooth transition effect */
-    }
-    #vision-button:hover {
-       transform: scale(1.2); /* Scale up the button by 30% when hovered */
-       transition: transform 0.3s; /* Smooth transition effect */
-    }
-    #pt-button:hover {
-       transform: scale(1.2); /* Scale up the button by 30% when hovered */
-       transition: transform 0.3s; /* Smooth transition effect */
-    }
-    #ct-button:hover {
-       transform: scale(1.2); /* Scale up the button by 30% when hovered */
-       transition: transform 0.3s; /* Smooth transition effect */
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="index.html" id="gc-button">GC</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html" id="home-button">Home</a></li>
-        <!-- <li><a href="cv.html" id="cv-button">CV</a></li> -->
-        <li><a href="vision.html" id="vision-button">Vision</a></li>
-        <li><a href="portfolio.html" id="pt-button">Portfolio</a></li>
-        <li><a href="contact.html" id="ct-button">Contact</a></li>
+    <a class="navbar-brand" href="index.html" id="gc-button">GC</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active"><a class="nav-link" href="index.html" id="home-button">Home</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="cv.html" id="cv-button">CV</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="vision.html" id="vision-button">Vision</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html" id="pt-button">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html" id="ct-button">Contact</a></li>
       </ul>
     </div>
   </div>
